@@ -19,24 +19,18 @@
     </a>
 </div>
 
-<!-- Carrusel de Productos -->
-<div id="productosCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div *ngFor="let producto of productos; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
-            <img [src]="producto.imagen" class="carrusel-imagen" [alt]="producto.nombre">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>{{ producto.nombre }}</h5>
-                <p>{{ producto.descripcion }}</p>
+<!-- Contenedor de Productos -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Nuestros Productos</h2>
+    <div class="d-flex flex-wrap justify-content-center">
+        <div *ngFor="let producto of productos" class="card m-2" style="width: 18rem;">
+            <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+            <div class="card-body">
+                <h5 class="card-title">{{ producto.nombre }}</h5>
+                <p class="card-text">{{ producto.descripcion }}</p>
                 <a [routerLink]="['/producto', producto.id]" class="btn btn-primary">Ver Más</a>
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#productosCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#productosCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </a>
 </div>
+
