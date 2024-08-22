@@ -1,64 +1,88 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
 /* Imagen Empresarial */
-.container img.img-fluid {
-    max-width: 80%; /* Asegura que la imagen ocupe el 80% del ancho del contenedor */
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+}
+
+.img-fluid {
+    object-fit: cover;
+    width: 100%;
     height: auto;
-    margin: 20px auto; /* Centrado con margen */
-    border-radius: 10px; /* Bordes redondeados para un look suave */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar la imagen */
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Carrusel General */
+/* Carrusel de Ofertas */
 .carousel-inner img {
-    max-height: 500px; /* Altura máxima para las imágenes del carrusel */
-    object-fit: cover; /* Ajusta la imagen para cubrir sin distorsión */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo del pie de página del carrusel */
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 1rem; /* Espaciado interno */
-    color: #ffffff; /* Texto en blanco para contraste */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para el texto */
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Controles del Carrusel */
+.carousel-caption p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para los íconos */
-    border-radius: 50%; /* Íconos redondeados */
-    padding: 10px; /* Espaciado interno */
+    filter: invert(100%);
 }
 
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro en hover */
-}
-
-/* Estilo del botón en el carrusel de productos */
+/* Carrusel de Productos */
 .carousel-caption .btn-primary {
-    background-color: #0056b3; /* Azul corporativo */
-    border-color: #0056b3; /* Borde del mismo color */
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    font-weight: 600;
     text-transform: uppercase;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
 }
 
 .carousel-caption .btn-primary:hover {
-    background-color: #ffcc00; /* Cambio a dorado en hover */
-    border-color: #ffcc00;
-    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+    background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    background-color: #f8f9fa; /* Fondo claro */
-    padding: 1.5rem;
-    font-size: 1rem;
-    color: #333333; /* Gris oscuro */
-    border-top: 1px solid #dddddd; /* Línea superior para separar */
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .p-3 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        border-radius: 10px;
+    }
 }

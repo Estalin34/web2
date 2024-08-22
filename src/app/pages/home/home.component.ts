@@ -1,7 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import * as ofertasData from '../../../assets/json/oferta.json';
+import ofertasData from '../../../assets/json/oferta.json';
+import productosData from '../../../assets/json/productos.json';
+import { Oferta } from '../../utils/ofertas';
+
 
 @Component({
   selector: 'app-home',
@@ -11,25 +14,18 @@ import * as ofertasData from '../../../assets/json/oferta.json';
   styleUrls: ['./home.component.css'] // Asegúrate de que esté en plural 'styleUrls'
 })
 export class HomeComponent {
-  empresaImagen = 'assets/images/descarga.jpeg';
-  empresaNombre = 'assets/images/OIP.jpeg';
+  empresaNombre = 'TEMU';
+  empresaImagen = 'assets/images/empresarial.jpg';
 
-  // Declara la propiedad 'ofertas' para almacenar los datos del JSON
-  ofertas: any[] = [];
+  // Declara la propiedad 'ofertas' utilizando la interfaz 'Oferta'
+  ofertas: Oferta[] = []; // Asegúrate de que esto sea un array de ofertas
 
-  productos = [
-    { id: 1, imagen: 'assets/images/1.webp', nombre: 'Producto 1', descripcion: 'Descripción breve del producto 1.' },
-    { id: 2, imagen: 'assets/images/oferta.jpg', nombre: 'Producto 2', descripcion: 'Descripción breve del producto 2.' },
-    // Añade más productos aquí
-  ];
-maxresdefaultImagen: any;
+  productos = productosData; // Asumiendo que productosData es del tipo correcto
 
-  constructor() {
-    // Asigna los datos del JSON a la propiedad 'ofertas'
-    this.ofertas = (ofertasData as any).default;
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log(this.ofertas); 
+    this.ofertas = ofertasData; // Asigna los datos del JSON a la propiedad 'ofertas'
+    console.log(this.ofertas); // Verifica que los datos se están cargando correctamente
   }
 }

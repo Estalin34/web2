@@ -15,20 +15,33 @@ export class ProductoDetalleComponent {
   // Datos de ejemplo de productos
   productos = [
     {
-      id: '1',
-      nombre: 'Producto 1',
-      imagen: 'assets/images/zapatillas.jpg',
-      descripcion: 'Descripción detallada del Producto 1',
-      precio: 99.99
+      "id": "1",
+      "nombre": "Audífonos Inalámbricos",
+      "imagen": "assets/images/audifonos.jpeg",
+      "descripcion": "Audífonos inalámbricos de alta calidad con cancelación de ruido, sonido envolvente y una batería de larga duración, ideales para disfrutar de tu música favorita en cualquier lugar.",
+      "precio": 99.99
     },
     {
-      id: '2',
-      nombre: 'Producto 2',
-      imagen: 'assets/images/Telefono.jpg',
-      descripcion: 'Descripción detallada del Producto 2',
-      precio: 149.99
+      "id": "2",
+      "nombre": "Teléfono Inteligente",
+      "imagen": "assets/images/Telefono.jpg",
+      "descripcion": "Teléfono inteligente de última generación con pantalla OLED de 6.5 pulgadas, cámara de alta resolución y 128 GB de almacenamiento interno, perfecto para capturar momentos y disfrutar de aplicaciones.",
+      "precio": 149.99
+    },
+    {
+      "id": "3",
+      "nombre": "Chaqueta Impermeable",
+      "imagen": "assets/images/chaqueta.jpg",
+      "descripcion": "Chaqueta impermeable de diseño moderno y elegante, confeccionada con materiales de alta calidad que ofrecen protección contra el clima frío y lluvioso. Ideal para actividades al aire libre.",
+      "precio": 199.99
+    },
+    {
+      "id": "4",
+      "nombre": "Cámara Digital",
+      "imagen": "assets/images/camara.jpg",
+      "descripcion": "Cámara digital compacta con sensor de alta resolución, zoom óptico de 10x y estabilización de imagen, perfecta para capturar fotos y videos con gran detalle y claridad.",
+      "precio": 249.99
     }
-    // Agrega más productos aquí si es necesario
   ];
 
   constructor(private route: ActivatedRoute) {}

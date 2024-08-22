@@ -1,30 +1,30 @@
 [
   {
     "id": "1",
-    "nombre": "Producto 1",
-    "imagen": "assets/images/audifonos.jpeg",
-    "descripcion": "Descripción detallada del Producto 1",
+    "nombre": "Audífonos Inalámbricos",
+    "descripcion": "¡Aprovecha nuestra oferta especial en audífonos inalámbricos! Obtén sonido envolvente de alta calidad y cancelación de ruido avanzada, con una batería de larga duración para que disfrutes de tu música sin interrupciones. ¡No te lo pierdas!",
+    "imagen": "assets/images/ofertaAudifonos.jpg",
     "precio": 99.99
   },
   {
     "id": "2",
-    "nombre": "Producto 2",
-    "imagen": "assets/images/Telefono.jpg",
-    "descripcion": "Descripción detallada del Producto 2",
+    "nombre": "Teléfono Inteligente",
+    "descripcion": "¡Gran oferta en teléfonos inteligentes! Consigue este modelo de última generación con pantalla OLED de 6.5 pulgadas y 128 GB de almacenamiento interno. Perfecto para capturar tus momentos y disfrutar de todas tus aplicaciones. ¡Hazlo tuyo ahora!",
+    "imagen": "assets/images/ofertaTelefono.jpg",
     "precio": 149.99
   },
   {
     "id": "3",
-    "nombre": "Producto 3",
-    "imagen": "assets/images/chaqueta.jpg",
-    "descripcion": "Descripción detallada del Producto 3",
+    "nombre": "Chaqueta Impermeable",
+    "descripcion": "¡No te pierdas nuestra oferta en chaquetas impermeables! Mantente protegido contra el clima frío y lluvioso con este diseño moderno y elegante, confeccionado con materiales de alta calidad. Ideal para tus aventuras al aire libre. ¡Compra hoy!",
+    "imagen": "assets/images/ofertaChampa.jpg",
     "precio": 199.99
   },
   {
     "id": "4",
-    "nombre": "Producto 4",
-    "imagen": "assets/images/camara.jpg",
-    "descripcion": "Descripción detallada del Producto 4",
+    "nombre": "Cámara Digital",
+    "descripcion": "¡Oferta imperdible en cámaras digitales! Aprovecha esta oportunidad para obtener una cámara compacta con sensor de alta resolución, zoom óptico de 10x y estabilización de imagen. Captura fotos y videos con detalle y claridad excepcionales. ¡Adquiere la tuya ahora!",
+    "imagen": "assets/images/ofertaCama.jpg",
     "precio": 249.99
   }
 ]

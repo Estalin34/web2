@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './error404.component.css',
 })
 export class Error404Component {
-  errorImagen = 'path_to_error_404.png'; 
+
   errorMensaje = '¡Oops! La página que buscas no existe.';
+  errorImagen = 'assets/images/error.webp'; 
 }
