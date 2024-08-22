@@ -1,0 +1,58 @@
+/* Contenedor principal */
+.container {
+    margin-top: 10%;
+    padding: 2rem;
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidad */
+}
+
+/* Estilo del mensaje de error 404 */
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #003366; /* Azul corporativo */
+    margin-bottom: 1rem;
+}
+
+/* Estilo del mensaje de error */
+p {
+    font-size: 1.5rem;
+    color: #666666; /* Gris para el texto */
+    margin-bottom: 2rem;
+}
+
+/* Estilo de la imagen de error */
+.error-image {
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #003366; /* Azul corporativo */
+    border-color: #003366; /* Borde del mismo color */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00; /* Cambio a dorado en hover */
+    border-color: #ffcc00;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilo del footer */
+footer {
+    margin-top: 3rem;
+    background-color: #f1f1f1; /* Fondo claro */
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333333; /* Gris oscuro */
+    border-top: 1px solid #dddddd; /* Línea superior sutil */
+}

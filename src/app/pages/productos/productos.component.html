@@ -1,0 +1,58 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li *ngFor="let tab of tabs" class="nav-item" role="presentation">
+    <a 
+      class="nav-link" 
+      [ngClass]="{'active': tab.seleccionado}" 
+      id="{{tab.id}}-tab" 
+      data-bs-toggle="tab" 
+      href="#{{tab.id}}" 
+      role="tab" 
+      [attr.aria-controls]="tab.id" 
+      [attr.aria-selected]="tab.seleccionado">{{ tab.nombre }}</a>
+  </li>
+</ul>
+
+<!-- Contenido de las Pestañas -->
+<div class="tab-content" id="myTabContent">
+  <div 
+    *ngFor="let tab of tabs" 
+    class="tab-pane fade" 
+    [ngClass]="{'show active': tab.seleccionado}" 
+    id="{{tab.id}}" 
+    role="tabpanel" 
+    [attr.aria-labelledby]="tab.id + '-tab'">
+    
+    <!-- Contenido específico de cada pestaña -->
+    <div *ngIf="tab.id === 'home'">
+      <!-- Contenido de la pestaña Inicio -->
+      <p>Aquí va el contenido de la pestaña Inicio.</p>
+    </div>
+    
+    <div *ngIf="tab.id === 'productos'">
+      <!-- Lista Flexible de Tarjetas de Productos -->
+      <div class="container mt-4">
+        <div class="row">
+          <div *ngFor="let producto of productos" class="col-md-4 mb-4">
+            <div class="card">
+              <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+              <div class="card-body">
+                <h5 class="card-title">{{ producto.nombre }}</h5>
+                <p class="card-text">{{ producto.descripcion }}</p>
+                <a [routerLink]="['/producto', producto.id]" class="btn btn-primary">Ver Más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Añade más condiciones para otras pestañas si es necesario -->
+    
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="text-center p-3">
+    © 2024 Mi Tienda
+  </div>
+</footer>

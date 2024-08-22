@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- Imagen del Producto -->
+  <img [src]="producto.imagen" [alt]="producto.nombre" class="product-image">
+
+  <!-- Título del Producto -->
+  <h1 class="product-title">{{ producto.nombre }}</h1>
+
+  <!-- Descripción del Producto -->
+  <p class="product-description">
+      {{ producto.descripcion }}
+  </p>
+
+  <!-- Precio del Producto -->
+  <p class="product-price">{{ producto.precio | currency }}</p>
+
+  <!-- Botón de Compra -->
+  <a [routerLink]="['/compra', producto.id]" class="btn-buy">Comprar</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="text-center p-3">
+        © 2024 Mi Tienda
+      </div>
+  </footer>
+</div>

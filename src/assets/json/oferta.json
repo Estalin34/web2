@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "nombre": "Producto 1",
+    "imagen": "assets/images/audifonos.jpeg",
+    "descripcion": "Descripción detallada del Producto 1",
+    "precio": 99.99
+  },
+  {
+    "id": "2",
+    "nombre": "Producto 2",
+    "imagen": "assets/images/Telefono.jpg",
+    "descripcion": "Descripción detallada del Producto 2",
+    "precio": 149.99
+  },
+  {
+    "id": "3",
+    "nombre": "Producto 3",
+    "imagen": "assets/images/chaqueta.jpg",
+    "descripcion": "Descripción detallada del Producto 3",
+    "precio": 199.99
+  },
+  {
+    "id": "4",
+    "nombre": "Producto 4",
+    "imagen": "assets/images/camara.jpg",
+    "descripcion": "Descripción detallada del Producto 4",
+    "precio": 249.99
+  }
+]

@@ -1,0 +1,33 @@
+<div class="container">
+  <!-- Sección Historia, Misión y Visión -->
+  <div class="section historia">
+    <h2>Nuestra Historia</h2>
+    <p>Aquí puedes escribir un breve resumen sobre la historia de la empresa, cómo comenzó, su trayectoria y logros importantes a lo largo de los años.</p>
+  </div>
+  
+  <div class="section mision-vision">
+    <h2>Misión y Visión</h2>
+    <p><strong>Misión:</strong> Describe la misión de la empresa aquí, qué es lo que se esfuerza por lograr y cómo busca impactar a sus clientes o comunidad.</p>
+    <p><strong>Visión:</strong> Describe la visión de la empresa, lo que espera convertirse en el futuro y las metas a largo plazo que tiene.</p>
+  </div>
+  
+  <!-- Sección de Ejecutivos -->
+  <div class="section ejecutivos">
+    <h2>Nuestros Ejecutivos</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let ejecutivo of ejecutivos">
+        <img [src]="ejecutivo.imagen" class="card-img" [alt]="ejecutivo.nombre">
+        <div class="card-body">
+          <h3 class="card-title">{{ ejecutivo.nombre }}</h3>
+          <p class="card-text">{{ ejecutivo.cargo }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      © 2024 Mi Tienda
+    </div>
+  </footer>
+</div>

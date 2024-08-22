@@ -1,0 +1,64 @@
+/* Imagen Empresarial */
+.container img.img-fluid {
+    max-width: 80%; /* Asegura que la imagen ocupe el 80% del ancho del contenedor */
+    height: auto;
+    margin: 20px auto; /* Centrado con margen */
+    border-radius: 10px; /* Bordes redondeados para un look suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar la imagen */
+}
+
+/* Carrusel General */
+.carousel-inner img {
+    max-height: 500px; /* Altura máxima para las imágenes del carrusel */
+    object-fit: cover; /* Ajusta la imagen para cubrir sin distorsión */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+}
+
+/* Estilo del pie de página del carrusel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    color: #ffffff; /* Texto en blanco para contraste */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para el texto */
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para los íconos */
+    border-radius: 50%; /* Íconos redondeados */
+    padding: 10px; /* Espaciado interno */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro en hover */
+}
+
+/* Estilo del botón en el carrusel de productos */
+.carousel-caption .btn-primary {
+    background-color: #0056b3; /* Azul corporativo */
+    border-color: #0056b3; /* Borde del mismo color */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.carousel-caption .btn-primary:hover {
+    background-color: #ffcc00; /* Cambio a dorado en hover */
+    border-color: #ffcc00;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #333333; /* Gris oscuro */
+    border-top: 1px solid #dddddd; /* Línea superior para separar */
+}

@@ -1,0 +1,58 @@
+<!-- Imagen Empresarial -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-4">
+            <img [src]="empresaImagen" [alt]="empresaNombre" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<!-- Carrusel de Ofertas -->
+<div id="ofertasCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div *ngFor="let oferta of ofertas; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+            <img [src]="oferta.imagen" class="d-block w-100" [alt]="oferta.nombre">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ oferta.nombre }}</h5>
+                <p>{{ oferta.descripcion }}</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#ofertasCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#ofertasCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </a>
+</div>
+
+<!-- Carrusel de Productos -->
+<div id="productosCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div *ngFor="let producto of productos; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+            <img [src]="producto.imagen" class="d-block w-100" [alt]="producto.nombre">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ producto.nombre }}</h5>
+                <p>{{ producto.descripcion }}</p>
+                <a [routerLink]="['/productos', producto.id]" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#productosCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#productosCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3">
+      © 2024 Mi Tienda
+    </div>
+</footer>
